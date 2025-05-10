@@ -35,13 +35,23 @@
       background-color: #0088cc;
     }
 
+    .images-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
     .image-container {
-      display: inline-block;
-      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 300px;
     }
 
     .image-container img {
-      max-width: 300px;
+      width: 100%;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     }
@@ -60,14 +70,16 @@
   <a href="images (1).jpg" download><button>Паронормальная кнопка</button></a>
   <a href="images.jpg" download><button>МаканWorld</button></a>
 
-  <div class="image-container">
-    <img src="images (3).png" alt="Subscribe to Azot.">
-    <div class="caption">Создатель</div>
-  </div>
+  <div class="images-wrapper">
+    <div class="image-container">
+      <img src="images (3).png" alt="Subscribe to Azot.">
+      <div class="caption">Создатель</div>
+    </div>
 
-  <div class="image-container">
-    <img src="sub.png" alt="Subscribe to t0talnopoxyi.">
-    <div class="caption">Спонсор</div>
+    <div class="image-container">
+      <img src="sub.png" alt="Subscribe to t0talnopoxyi.">
+      <div class="caption">Спонсор</div>
+    </div>
   </div>
 </body>
 </html>
